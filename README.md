@@ -25,6 +25,7 @@ wakeScope {
 ```
 ### Important To Know
 - wakeScope has a receiver of type context
+- you can pass in a timeout period to wakeScope
 ## License
 ```
 Copyright 2020 Chris Basinger
