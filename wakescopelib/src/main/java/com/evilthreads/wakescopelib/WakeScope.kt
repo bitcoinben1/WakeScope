@@ -16,6 +16,8 @@ package com.evilthreads.wakescopelib
 import android.annotation.SuppressLint
 import android.content.Context
 import android.os.PowerManager
+import kotlinx.coroutines.runBlocking
+
 /*
             (   (                ) (             (     (
             )\ ))\ )    *   ) ( /( )\ )     (    )\ )  )\ )
@@ -45,7 +47,9 @@ fun Context.wakeScope(timeout: Long = -1L, block: () -> Unit){
         wakeLock.acquire(timeout)
     else
         wakeLock.acquire()
-    block()
+    runBlocking {
+        block()
+    }
     if(wakeLock.isHeld)
         wakeLock.release()
 }
