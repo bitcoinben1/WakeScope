@@ -1,6 +1,6 @@
 [![Release](https://jitpack.io/v/evilthreads669966/wakescope.svg)](https://jitpack.io/#evilthreads669966/wakescope)&nbsp;&nbsp;[![API](https://img.shields.io/badge/API-14%2B-brightgreen.svg?style=plastic)](https://android-arsenal.com/api?level=14)
 # WakeScope
-### An Android library that gives you a scoping function that keeps your processor awake.
+### An Android library that gives you a KTX scoping function that keeps your processor awake.
 ## User Instructions
 1. Add the JitPack repository to your project's build.gradle
 ```gradle
@@ -23,6 +23,8 @@ wakeScope {
     //do work
 }
 ```
+### Important To Know
+- wakeScope has a receiver of type context
 ## License
 ```
 Copyright 2020 Chris Basinger
