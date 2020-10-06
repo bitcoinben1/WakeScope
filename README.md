@@ -73,6 +73,8 @@ If you don't have an IDE preference we would recommend that you use
 ## Contributors
 This project exists thanks to all the people who contribute.
 <a href="https://github.com/evilthreads669966/wakescope/graphs/contributors"><img src="https://opencollective.com/wakescope/contributors.svg?width=890&button=false" /></a>
+## Talking about WakeScope
+### Articles
 ## License
 ```
 Copyright 2020 Chris Basinger
