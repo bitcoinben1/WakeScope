@@ -1,0 +1,3 @@
+include ':wakescopelib'
+include ':app'
+rootProject.name = "WakeScope"
