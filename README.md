@@ -14,7 +14,7 @@ allprojects {
 2. Add the dependency to your app's build.gradle
 ```gradle
 dependencies {
-        implementation 'com.github.evilthreads669966:wakescope:1.1'
+        implementation 'com.github.evilthreads669966:wakescope:2.0'
 }
 ```
 3. Subclass WakeService and override Intent.doWork()
