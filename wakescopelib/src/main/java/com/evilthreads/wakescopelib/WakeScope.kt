@@ -54,7 +54,7 @@ fun Context.wakeScope(timeout: Long = -1L, block: () -> Unit){
         wakeLock.release()
 }
 
-fun Context.suspendedWakeScope(timeout: Long = -1L, block: suspend () -> Unit){
+suspend fun Context.suspendedWakeScope(timeout: Long = -1L, block: suspend () -> Unit){
     val mgr = this.getSystemService(Context.POWER_SERVICE) as PowerManager
     val wakeLock = mgr.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "$packageName.wakelock")
     if(timeout != -1L)
